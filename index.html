@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Productos</h2>
+            <div class="product" data-name="Producto 1" data-price="100">
+                <h3>Producto 1</h3>
+                <p>Precio: $100</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-name="Producto 2" data-price="200">
+                <h3>Producto 2</h3>
+                <p>Precio: $200</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-name="Producto 3" data-price="300">
+                <h3>Producto 3</h3>
+                <p>Precio: $300</p>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Carrito de Compras</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los productos se agregarán aquí -->
+                </tbody>
+            </table>
+            <div class="total">
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
+            <a href="#" id="vaciar-carrito" class="vaciar-carrito">Vaciar Carrito</a>
+        </section>
+    </main>
+
+    <script src="carrito.js"></script>
+</body>
+</html>
